@@ -28,7 +28,6 @@ SCENARIO("Capturing standard output in a test", "[capture]")
     GIVEN("something to send to standard output")
     {
         std::string message{"Hi there!"};
-
         WHEN("that object is inserted into the standard output stream")
         {
             std::cout << message << std::endl;
@@ -61,7 +60,7 @@ SCENARIO("Capturing standard output in a test", "[capture]")
 
 #if FINISHED_PART_1
 namespace csc232 {
-    class TestShape final : public Shape {
+    class TestShape final : public {
     public:
         double area() const override {
             return 0;
